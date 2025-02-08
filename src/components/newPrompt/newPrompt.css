@@ -1,0 +1,152 @@
+.newPrompt {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.chatContent {
+  flex-grow: 1;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  padding: 20px;
+  padding-bottom: 120px;
+}
+
+.chatContent::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.loading {
+  text-align: center;
+  padding: 10px;
+  color: #1A1A1A;
+}
+
+.message {
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  border-radius: 20px 3px 20px 20px ;
+  max-width: 80%;
+}
+
+.message.user {
+  width:fit-content;
+  margin-right: 11%;
+  text-align: end;
+  background-color: #1f1f1f;
+}
+
+.message:not(.user) {
+  /* background-color: #2c2937; */
+}
+
+.endChat {
+  padding-bottom: 84px;
+}
+
+.newForm {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 800px;
+  background-color: #1A1A1A;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin-bottom:20px ;
+}
+
+.newForm input[type="text"] {
+  flex: 1;
+  padding: 15px 0;
+  border: none;
+  outline: none;
+  background-color: #1A1A1A;
+  color: #ececec;
+  font-size: 16px;
+}
+
+.newForm input{
+  background-color: #1A1A1A;
+}
+
+.newForm button,
+.newForm label {
+  border-radius: 50%;
+  background-color: #7A7885;
+  border: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newForm button:hover,
+.newForm label:hover {
+  background-color: #7a7885;
+}
+
+.newForm button img,
+.newForm label img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .newForm {
+    width: 100%;
+    border-radius: 30px 30px 0px 0px ;
+    padding: 8px 15px;
+    margin-bottom: -20px;
+    height: 70px;
+  }
+
+  .newForm input[type="text"] {
+    font-size: 14px;
+  }
+
+  .message {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .chatContent {
+    padding: 10px;
+    padding-bottom: 100px;
+  }
+
+  .newForm {
+    padding: 8px 12px;
+  }
+
+  .newForm input[type="text"] {
+    padding: 12px 0;
+  }
+
+  .newForm button,
+  .newForm label {
+    padding: 10px;
+  }
+
+  .newForm button img,
+  .newForm label img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+ 
