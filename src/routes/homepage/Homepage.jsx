@@ -48,12 +48,12 @@ function Homepage() {
 
       <div className="relative pt-16">
         {/* Hero Section */}
-        <div className="relative max-w-7xl mx-auto px-4 py-20">
+        <div className="relative max-w-7xl mx-auto px-4 py-20 h-screen md:mt-40">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="flex flex-col text-left scroll-reveal">
               <div className="relative mb-6">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extralight tracking-tight text-white">
-                  Future of{" "}
+                Unlock the world of {" "}
                   <span className="relative">
                     <span className="relative z-10 font-normal bg-gradient-to-r from-purple-200 via-indigo-200 to-purple-200 bg-clip-text text-transparent">
                       3D Printing
@@ -64,8 +64,7 @@ function Homepage() {
                 <div className="absolute -inset-4 bg-gradient-to-r from-purple-500/10 via-indigo-500/10 to-purple-500/10 blur-xl opacity-50" />
               </div>
               <p className="text-lg sm:text-xl text-gray-300 mb-8 font-light leading-relaxed">
-                Experience revolutionary 3D printing technology that transforms your creative vision into reality.
-                Precision engineering meets limitless possibilities.
+              Explore 3D printing with our AI Chabot! Designed to provide step-by-step guidance in an easy conversational way.
               </p>
               <button className="group relative w-fit px-8 py-4 rounded-full bg-white/5 backdrop-blur-sm text-white font-light border border-white/20 hover:bg-white/10 transition-all duration-300">
                 <span className="relative z-10">  <Link to="/dashboard">Get Started</Link></span>
@@ -88,7 +87,7 @@ function Homepage() {
         </div>
 
         {/* Core Features Section */}
-        <div className="relative max-w-6xl mx-auto px-4 py-24">
+        {/* <div className="relative max-w-6xl mx-auto px-4 py-24">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
@@ -117,10 +116,10 @@ function Homepage() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Features Section */}
-        <div className="relative py-32 features-bg">
+        {/* <div className="relative py-32 features-bg">
           <div className="circle-animation circle-1" />
           <div className="circle-animation circle-2" />
           <div className="circle-animation circle-3" />
@@ -190,10 +189,10 @@ function Homepage() {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Get in Touch Section */}
-        <div className="relative py-24">
+        {/* <div className="relative py-24">
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12">
               <div className="glass-effect p-8 rounded-2xl border border-white/10 scroll-reveal">
@@ -293,7 +292,7 @@ function Homepage() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Footer */}
         <footer className="relative py-12 footer-gradient">
@@ -301,7 +300,7 @@ function Homepage() {
           <div className="footer-glow footer-glow-2" />
 
           <div className="max-w-6xl mx-auto px-4 relative z-10">
-            <div className="grid md:grid-cols-4 gap-8">
+            {/* <div className="grid md:grid-cols-4 gap-8">
               <div className="scroll-reveal">
                 <div className="flex items-center space-x-2 mb-4">
                   <Printer size={24} className="text-purple-400" />
@@ -389,11 +388,11 @@ function Homepage() {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
 
             <div className="mt-12 pt-8 border-t border-white/10 text-center scroll-reveal">
               <p className="text-gray-400 font-light">
-                &copy; {new Date().getFullYear()} PrintMaster. All rights reserved.
+                &copy; {new Date().getFullYear()}. All rights reserved.
               </p>
             </div>
           </div>
