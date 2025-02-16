@@ -12,6 +12,7 @@ const DashboardPage = () => {
         method: "POST",
         credentials: "include",
         headers: {
+          
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ text }),
@@ -33,7 +34,7 @@ const DashboardPage = () => {
   return (
     <div className="dashboardPage">
       <div className="texts">
-        <div className="logo">
+        {/* <div className="logo">
           <img src="/logo.png" alt="Logo" />
           <h1>Future</h1>
         </div>
@@ -50,7 +51,7 @@ const DashboardPage = () => {
             <img src="/code.png" alt="Code Icon" />
             <span>Help me with my Code</span>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* Mobile View - Display Arrow */}
       <div className="formContainer sm:hidden">
